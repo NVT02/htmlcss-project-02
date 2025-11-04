@@ -40,6 +40,7 @@ body {
 
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .heading {
@@ -308,4 +309,85 @@ body {
     background-color: var(--primary-color);
     color: #fff;
     cursor: pointer;
+}
+
+.popular .course-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 3rem;
+}
+
+.popular .course-item {
+    flex: 1; /* dòng này để cho các phần tử chia đều nhau*/
+    border-radius: 1.2rem;
+    border: 1px solid #e2dfda;
+}
+
+.popular .course-item:hover {
+    /* border: none; */ /*dùng dòng này cũng đc nhưng sẽ gây 
+                        giật lag nên chỉ cần dùng màu transparent*/
+    border-color: transparent;
+    box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
+}
+
+.popular .course-item .thumb {
+    width: calc(100% + 2px);
+    height: 278px;
+    margin: -1px;
+    border-radius: 1.2rem 1.2rem 0 0;
+    object-fit: cover;
+}
+
+.popular .course-item .info {
+    margin: 16px 22px 22px;
+}
+
+.popular .course-item .foot,
+.popular .course-item .rating,
+.popular .course-item .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .course-item .title a {
+    color: #171100;
+    width: 159px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem; /* 166.667% */
+    text-decoration: none;
+}
+
+.popular .course-item .rating {
+    gap: 6px;
+}
+
+.popular .rating .value {
+    color: var(--primary-color);
+}
+
+.popular .course-item .desc {
+    margin-top: 6px;
+    color: #5f5b53;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+}
+
+.popular .course-item .foot {
+    margin-top: 12px;
+}
+
+.popular .foot .price {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.popular .foot .course-cta {
+    border: none;
+}
+
+.popular .foot .course-cta:hover {
+    background: var(--primary-color);
 }
