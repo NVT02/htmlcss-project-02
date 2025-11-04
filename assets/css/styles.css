@@ -474,3 +474,53 @@ body {
     font-style: italic;
     line-height: 4rem;
 }
+
+/* ========== Features ========== */
+
+.features {
+    margin-top: 136px;
+    padding: 65px 0;
+}
+
+.features .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .images {
+    display: flex;
+    gap: 30px;
+}
+
+.features .images img {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.features .images img.lower {
+    margin-top: 34px;
+}
+
+.features .content {
+    display: flex;
+    flex-direction: column; /*đảo chiều ngang thành dọc*/
+    align-items: flex-start;
+    justify-content: center;
+    width: 41%;
+}
+
+.features .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+.features .content .cta-btn {
+    margin-top: 32px;
+    min-width: 137px;
+    color: #fff;
+    background-color: var(--primary-color);
+}
